@@ -1,0 +1,57 @@
+body {
+    font_family: "Raleway";
+    font-size: 1.5em;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    padding: 20px;
+}
+
+label {
+    margin: 25px 5px;
+}
+
+#remove_inputs {
+    background-color: aliceblue;
+    color: blue;
+    padding: 30px;
+}
+
+#add_btn {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px 15px;
+    cursor: pointer
+}
+
+#remove_btn {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px 15px;
+    cursor: pointer
+}
+
+select {
+    font-family: "Raleway";
+    font-size: 0.85em;
+    text-align: center;
+    width: 200px ;
+    margin: 50px 10px;
+    padding: 5px 0px;
+    border: 2px solid darkgrey;
+
+}
+
+#add_btn:hover {
+    badckground-color: darkslategrey
+}

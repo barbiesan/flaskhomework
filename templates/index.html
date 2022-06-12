@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonebook</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css')}}">
+    <script> type="text/javasript" src="{{ url_for('static',filename='js/main.js')}}"</script>
+    
+</head>
+<body>
+    <div>
+        <img src="/Users/barbiesan/Desktop/coding TEMPLE/WEEK6 FLASK/flaskhomework/phonebk.png" alt="phonebookimg">
+    </div>
+
+    <div id="remove_inputs">
+        <form action="/remove_inputs" method="POST">
+            {% for input in phone_numbers%}
+            <input type="checkbox" name "check" id="{{input}}" value="{{input}}" onchange="check_me('{{ input }} ')">
+            <label for="{{input}}" name ="{{input}}">{{input}}</label><br>
+            {%endfor%}
+            <input type="submit" value="REMOVE INPUT" id="remove_btn">
+        </div>
+    <div id ="add_input">
+        <form action="/add_input"method="POST">
+            <select name="select_inputs">
+                {% for input in all_inputs%}
+              <option value="input">Input</option>
+                {% endfor %}
+                <input type"submit" value="ADD INPUT"id="add_btn" >
+
+                
+
+      
+    </div>
+   {% for input in all_data %}
+   <p>{{input}}</p>
+   {% endfor %}
+
+    
+</body>
+</html>
