@@ -13,6 +13,6 @@ connection = sqlite3.connect("people_list.db")
 cursor = connection.cursor()
 
 cursor.execute("create table people (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)")
-for i in range(len(groceries)):
+for i in range(len(people)):
   cursor.execute("insert into people (name) values (?)",[people[i]])
   print("added ", people[i])
